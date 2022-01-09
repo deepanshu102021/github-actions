@@ -3,7 +3,7 @@ name: 'Deploy'
 runs:
   using: "composite"
   steps:
-      - name: Deploy
+      - shell: bash
         run: |
           gcloud run deploy java-rest-service-example \
           --region europe-west1 \
