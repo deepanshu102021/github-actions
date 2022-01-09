@@ -10,8 +10,8 @@ runs:
       
     - name: Build
       run: |
-        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/helloworld:latest .
+        docker build -t gcr.io/${{ env.PROJECT_NAME }}/helloworld:latest .
         
     - name: Push
       run: |
-        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/helloworld:latest
+        docker push gcr.io/${{ env.PROJECT_NAME }}/helloworld:latest
