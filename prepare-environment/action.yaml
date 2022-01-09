@@ -3,7 +3,6 @@ name: 'prepare-environment'
 runs:
   using: "composite"
    steps:
-      - name: Setup GCP Service Account
         uses: google-github-actions/setup-gcloud@master
         with:
           version: 'latest'
