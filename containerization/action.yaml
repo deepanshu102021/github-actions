@@ -4,7 +4,7 @@ runs:
   using: "composite"
   steps:
     - shell: bash
-        run: |
-          gcloud auth configure-docker
-          docker build -t gcr.io/${{ env.PROJECT_NAME }}/helloworld:latest .
-          docker push gcr.io/${{ env.PROJECT_NAME }}/helloworld:latest
+      run: |
+        gcloud auth configure-docker
+        docker build -t gcr.io/${{ env.PROJECT_NAME }}/helloworld:latest .
+        docker push gcr.io/${{ env.PROJECT_NAME }}/helloworld:latest
