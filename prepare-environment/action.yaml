@@ -1,4 +1,4 @@
-name: publish
+name: 'prepare-environment'
 
 runs:
   using: "composite"
