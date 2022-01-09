@@ -1,4 +1,4 @@
-name: publish
+name: 'containerization'
 
 runs:
   using: "composite"
